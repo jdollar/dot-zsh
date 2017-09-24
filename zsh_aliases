@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+if [[ -a $HOME/.zsh_aliases_passport ]] then
+  source $HOME/.zsh_aliases_passport
+fi
+
+alias ls='ls -G'
+alias tmux="tmux -2"
+
+#Git
+alias push='git push origin HEAD'
+alias gfdb='git branch -D'
+alias pull='git pull'
+alias gradle='/usr/local/Cellar/gradle/3.5/bin/gradle'
+
