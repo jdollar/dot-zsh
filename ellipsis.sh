@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
 pkg.link() {
-  fs.link_file zshrc
-  fs.link_file zsh_profile
-  fs.link_file zsh_aliases
+  case $(os.platform) in
+    osx)
+      fs.link_files platforms/osx
+      ;;
+  esac
 }
 
 pkg.pull() {
