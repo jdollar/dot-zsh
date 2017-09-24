@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# jdollar/dot-zsh ellipsis package
 
 pkg.link() {
   case $(os.platform) in
