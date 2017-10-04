@@ -1,5 +1,7 @@
-if [[ -a $HOME/.zsh_profile_priv ]] then
-  source $HOME/.zsh_profile_priv
+if [ -d $HOME/.config/zsh_profile.d ]; then
+  for file in $HOME/.config/zsh_profile.d/*.zsh; do
+    source $file
+  done
 fi
 
 #python

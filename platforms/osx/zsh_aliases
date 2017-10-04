@@ -1,7 +1,9 @@
 #!/bin/zsh
 
-if [[ -a $HOME/.zsh_aliases_passport ]] then
-  source $HOME/.zsh_aliases_passport
+if [ -d $HOME/.config/zsh_alias.d ]; then
+  for file in $HOME/.config/zsh_alias.d/*.zsh; do
+    source $file
+  done
 fi
 
 alias ls='ls -G'
@@ -10,6 +12,6 @@ alias tmux="tmux -2"
 #Git
 alias push='git push origin HEAD'
 alias gfdb='git branch -D'
-alias pull='git pull'
+alias pull='git pull origin HEAD'
 alias gradle='/usr/local/Cellar/gradle/3.5/bin/gradle'
 
