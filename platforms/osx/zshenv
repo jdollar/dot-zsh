@@ -1,0 +1,31 @@
+export PATH=$HOME/.composer/vendor/bin:$PATH
+export PATH=$HOME/personalrepos/esp32/esp/xtensa-esp32-elf/bin:$PATH
+export PATH=/usr/local/Cellar/elixir/1.4.2/bin:$PATH
+export PATH=~/.ellipsis/bin:$PATH
+export PATH="/usr/local/opt/erlang@19/bin:$PATH"
+export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+
+#python
+export WORKON_HOME=~/.virtualenvs
+
+#arduino-mk
+export ARDUINO_DIR=/Applications/Arduino.app/Contents/Java
+export ARDMK_DIR=/usr/local
+export AVR_TOOLS_DIR=/usr
+export MONITOR_PORT=/dev/ttyACM0
+export BOARD_TAG=mega2560
+
+#esp
+export IDF_PATH=~/personalrepos/esp32/esp/esp-idf
+
+#ellipsis
+export ELLIPSIS_USER="jdollar"
+export ELLIPSIS_PROTO="ssh"
+export ELLIPSIS_PATH="$HOME/.ellipsis"
+
+export POWERLINE_COMMAND=powerline
+export POWERLINE_CONFIG_COMMAND=powerline-config
+export XDG_CONFIG_HOME=$HOME/.config
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
