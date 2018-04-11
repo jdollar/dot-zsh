@@ -6,10 +6,6 @@ if [[ -a ~/.zsh_aliases ]] then
   source ~/.zsh_aliases
 fi
 
-if [[ -a ~/.zshenv ]] then
-  source ~/.zshenv
-fi
-
 source "/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source '/usr/local/Cellar/zsh-syntax-highlighting/0.5.0/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
 
@@ -23,6 +19,3 @@ if [[ -a "$HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/z
   source "$HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
 fi
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/jdollar/.sdkman"
-[[ -s "/Users/jdollar/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jdollar/.sdkman/bin/sdkman-init.sh"

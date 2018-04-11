@@ -4,6 +4,7 @@
 pkg.install() {
   mkdir -p $HOME/.config/zsh_profile.d
   mkdir -p $HOME/.config/zsh_alias.d
+  mkdir -p $HOME/.config/zsh_env.d
 }
 
 pkg.link() {
