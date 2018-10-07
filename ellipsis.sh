@@ -12,7 +12,7 @@ OH_MY_ZSH_URL="https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/t
 D_DIRS=( "$PROFILE_D_DIR" "$ALIAS_D_DIR" "$ENV_D_DIR" )
 
 pkg.install() {
-  for i in "${D_DIRS[@]}"
+  for i in "${D_DIRS[@]}";
   do
     [[ ! -d "$i" ]] && mkdir -p $i
   done
