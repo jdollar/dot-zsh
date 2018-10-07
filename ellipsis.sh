@@ -9,16 +9,16 @@ ENV_D_DIR="$CONFIG_DIR/zsh_env.d"
 
 OH_MY_ZSH_URL="https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh"
 
-D_DIRS=( "$PROFILE_D_DIR" "$ALIAS_D_DIR" "$ENV_D_DIR" )
+#D_DIRS=( "$PROFILE_D_DIR" "$ALIAS_D_DIR" "$ENV_D_DIR" )
 
 pkg.install() {
-  for i in "${D_DIRS[@]}"
-  do
-    [[ ! -d "$i" ]] && mkdir -p $i
-  done
-
-  #install oh-my-zsh
-  [[ ! -d "$HOME/.oh-my-zsh" ]] && sh -c "$(curl -fsSL $OH_MY_ZSH_URL)"
+#  for i in "${D_DIRS[@]}"
+#  do
+#    [[ ! -d "$i" ]] && mkdir -p $i
+#  done
+#
+#  #install oh-my-zsh
+#  [[ ! -d "$HOME/.oh-my-zsh" ]] && sh -c "$(curl -fsSL $OH_MY_ZSH_URL)"
 }
 
 pkg.link() {
