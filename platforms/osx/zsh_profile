@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 if [ -d $HOME/.config/zsh_profile.d ]; then
   for file in $HOME/.config/zsh_profile.d/*.zsh; do
     source $file

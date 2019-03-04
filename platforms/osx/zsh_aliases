@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!usr/bin/env zsh
 
 if [ -d $HOME/.config/zsh_alias.d ]; then
   for file in $HOME/.config/zsh_alias.d/*.zsh; do
