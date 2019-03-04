@@ -1,0 +1,5 @@
+# Set tap to click to be enabled
+xinput set-prop 10 280 1
+
+# Set touchpad to be a little faster
+xinput set-prop 10 295 .25
